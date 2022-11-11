@@ -72,3 +72,5 @@ func (c *Client) CreateBill(bill *Bill) (*Bill, error) {
 	err = json.NewDecoder(res.Body).Decode(&r)
 	return &r.Bill, err
 }
+
+// TODO: Query Bills
